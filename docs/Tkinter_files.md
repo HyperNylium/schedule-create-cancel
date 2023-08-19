@@ -19,8 +19,7 @@ test_widget = Label(window, text="test")
 test_widget.pack()
 ```
 
-4. The functions below are for scheduling functions to be called after a certain amount of time (ms).\
-Copy and paste these functions into your code:
+4. The functions below are for scheduling functions to be called after a certain amount of time (ms):
 ```python
 def schedule_create(widget, ms, func, cancel_after_finished=False, *args, **kwargs):
     event_id = widget.after(ms, lambda: func(*args, **kwargs))
